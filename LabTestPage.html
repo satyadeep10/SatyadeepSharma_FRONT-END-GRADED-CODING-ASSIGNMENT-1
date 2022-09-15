@@ -1,0 +1,116 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Test</title>
+
+<link rel ="stylesheet" href = "style.css" >
+</head>
+
+<body>
+ <div> 
+  
+<h2>1.Patient Details</h2>
+ <form class="form-inline">
+   
+  <label for="fname"></label>
+  <input type="text" id="fname" placeholder="fname">
+  <label for="lname"></label>
+  <input type="text" id="lname" placeholder="lname">
+ <br>
+ <br>
+ <br>
+  </form>
+  <form class="form-inline">
+  <label for="EmailId"></label>
+  <input type="text" id="EmailId" placeholder="EmailId">
+  <label for="PatientId"></label>
+  <input type="text" id="PatientId" placeholder="PatientId"> 
+
+</form>
+
+<h2>2.Address </h2>
+ <form class="form-inline">
+   
+  <label for="HouseNumber"></label>
+  <input type="text" id="HouseNo" placeholder="H-No">
+  <label for="Street"></label>
+  <input type="text" id="Street" placeholder="Street">
+ <br>
+ <br>
+ <br>
+</form>
+  <form class="form-inline">
+  <label for="Area"></label>
+  <input type="text" id="Area" placeholder="Area">
+</form>
+ <br>
+
+<form class="form-inline">
+<label for="District">District : </label>
+<br><br>
+    <select name="District" id="District"><br>	
+    <option value="choose">Choose</option>
+    <option value="rajasthan">Rajasthan</option>
+    <option value="uttar Pradesh">Uttar Pradesh</option>
+    <option value="madhya pradesh">Madhya Pradesh</option>
+  </select>
+
+</form>
+
+<h2>3.Test Type</h2>
+
+ <form class ="TestList">
+   <input type="checkbox" id="CBC"value="CBC">
+   <label for="CBC">CBC</label><br>
+  
+   <input type="checkbox" id="CompleteUrine"value="CompleteUrine">
+   <label for="Complete Urine">Complete Urine</label><br>
+
+   <input type="checkbox" id="LipidProfile"value="LipidProfile">
+   <label for="Lipid Profile">Lipid Profile</label><br>
+
+   <input type="checkbox" id="TSH"value="TSH">
+   <label for="TSH">Thyroid Stimulating Hormone(TSH)</label><br>
+
+   <input type="checkbox" id="GlucoseTest"value="GlucoseTest">
+   <label for="GlucoseTest">Glucose Test</label><br>
+
+</form>
+
+<h2>4.Do you want a hard copy of the report also?</h2>
+
+<form class="form-inline">
+   <input type="radio" name = "report" id="Yes" value="Yes">
+   <label for="Yes">Yes</label><br>
+  
+   <input type="radio" name = "report" id="No" value="No">
+   <label for="No">No</label><br>
+
+</form>
+
+<h2>5.Select your comfortable date and time </h2>
+
+<form class="TestList">
+    <label for="Date">Date : </label>
+    <input type="Date" id="Date" placeholder="Date">
+    <br>
+    <br>
+
+    <label for="Time">Time : </label>
+    <input type="time" id="Time" placeholder="Time">
+
+</form>
+
+<input   type="reset" value="Reset"  onclick="resetForms()">
+    <input type="submit" value="Submit">
+
+</div>
+
+<img id="fixed" src="lab-test.jpg" width ="500" height ="600" >
+
+
+</body>
+</html>
+

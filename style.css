@@ -1,0 +1,224 @@
+body {
+    background-color: whitesmoke;
+    font-family: verdana;
+    height: auto;
+    margin: 0%;
+  }
+  header h1 {
+    background-color: bisque;
+    color: brown;
+    text-align: center;
+    margin: 0%;
+    padding: 20px;
+  }
+
+  #navigate  {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+
+ }
+ .menu {
+    margin:0%;
+    background-color: rgba(0,0,0,0.5);
+   
+ }
+ .menu li {
+    display: inline-block;
+    padding: 10px;
+ }
+
+ .menu li #pdct {
+   
+   padding: 10px;
+   text-align:right;
+}
+ .menu li a {
+    color: white ;
+    font-size: 15px;
+    text-decoration: none;
+ }
+ .menu li :hover {
+    background-color: rgba(71, 44, 150, 0.7);
+ }
+
+ .menu li:hover #Dropdown_1 {
+    display: block;
+ }
+
+ .menu li:hover #Dropdown_2 {
+    display: block;
+ }
+
+ #Dropdown_2, #Dropdown_1 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+ }
+
+ #Dropdown_2 li, #Dropdown_1 li {
+    display: block;
+ }
+
+ #Dropdown_2 li a, #Dropdown_1 li a {
+    color: steelblue;
+    font-size: 15px;
+ }
+ #Dropdown_2 li:hover, #Dropdown_1 li:hover {
+    background-color: lightgreen;
+ }
+
+  footer {
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    font-size : 15px;
+    background-color: DarkSalmon;
+    color: white;
+    
+  }
+ 
+ .parent{
+  
+   border: 2px solid steelblue;
+   margin:1%;
+   height:500px;
+   width:1400px;
+   padding: 10px;
+
+   
+    
+   animation-name:myAnimation;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes myAnimation {
+  0% { background-image: url("ani1.jpg")}
+  25%{ background-image: url("ani2.png")}
+  50%{ background-image: url("ani3.jpg")}
+  75%{ background-image: url("ani4.jpg")}
+ 100%{ background-image: url("ani5.jpg")}
+}
+
+.CareBlock {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   height: auto;
+   justify-content: space-between;
+}
+
+.CovidTestKit, .CovidEssentials , .SanitizerBottle , .Mask{
+   width:270px;
+   height:250px;
+   margin-left:1.5%;
+   margin-right: 1.5%;
+   background-color: gainsboro;  
+}
+
+.title {
+   text-align:center;
+}
+
+.image1 img{
+   width: 205px;
+   height: 130px;
+   display: flex;
+   margin-top: 0%;
+   margin-left: 10%;  
+}
+
+.image2 img{
+   width: 205px;
+   height: 130px;
+   display: flex;
+   margin-top: 0%;
+   margin-left: 10%;  
+}
+.image3 img{
+   width: 205px;
+   height: 130px;
+   display: flex;
+   margin-top: 0%;
+   margin-left: 10%;  
+}
+.image4 img{
+   width: 205px;
+   height: 130px;
+   display: flex;
+   margin-top: 0%;
+   margin-left: 10%;  
+}
+
+.price {
+   text-align:left;
+   font-size:10px;
+   margin:1%;
+   color: steelblue;
+}
+.button {
+   text-align:center;
+   margin:0%;
+}
+button {
+   margin-top:6px;
+   margin-bottom:30px;
+   text-align:center;
+   border: 1px solid blue;
+   border-radius: 5px;
+   font-size: 13.5px;
+   color: orange;
+   width: 150px;
+   background-color: lightcyan;
+}
+
+.image1 img:hover , .image2 img:hover , .image3 img:hover , .image4 img:hover {
+   display: block;
+   width: 250px;
+   height: 200px;
+
+}
+
+input {
+   outline: 0;
+   border-width: 0 0 2px;
+   border-color: lightgray
+ }
+
+.form-inline {  
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   margin-left: 2%;
+   margin-right : 5%;
+ }
+ 
+ #lname, #PatientId ,#Street{
+   margin-left: 2%;
+ }
+ 
+ #District{
+   margin-left: 3%;
+ }
+ 
+ #fixed {
+   position:fixed;
+   top:0;
+   z-index: 1;
+   width:45%;
+   height:90%;
+   margin-top:2%;
+   margin-left: 50%;
+ }	
+
+ .TestList {
+   margin-left: 2%;
+ }
